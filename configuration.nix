@@ -93,6 +93,9 @@
       kdePackages.kate
     #  thunderbird
     ];
+    openssh.authorizedKeys.keys = [
+    "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIKofASRoBvqCMxwrpiYvyi8zy35Ns3RFOe3cHcmJ9nf4 bazzite2hermes"
+    ];
   };
     users.groups.aaron = {};
   # Install firefox.
@@ -142,7 +145,7 @@
 
  environment.shellAliases = {
   ls = "ls --color -Gah";
-  bat = "bat --theme Coloradark-Dark";
+  bat = "bat --theme Coldark-Dark";
   cat = "bat --pager=never -p";
 };
 
@@ -181,7 +184,7 @@ nix.settings.experimental-features = [
   # List services that you want to enable:
 
   # Enable the OpenSSH daemon.
-  # services.openssh.enable = true;
+  services.openssh.enable = true;
 
   # Open ports in the firewall.
    networking.firewall.allowedTCPPorts = [ 22 ];

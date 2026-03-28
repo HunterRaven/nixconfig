@@ -14,6 +14,7 @@ aaron = {
 
  imports = [
  ./hm/git.nix
+ ./hm/ssh.nix
  ];
 };
 };
